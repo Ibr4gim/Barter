@@ -1,16 +1,7 @@
-# my_project
+# Barter
 
-A new Flutter project.
+<hr>
 
-## Getting Started
+Barter is a platform for exchanging items you no longer need. List your stuff, like an old mouse, and discover what others offer in return. Simple, sustainable, and community-driven. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Getting Started

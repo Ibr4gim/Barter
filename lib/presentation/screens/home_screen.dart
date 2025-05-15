@@ -15,11 +15,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _screens = <Widget>[
-    HomeTabScreen(),
-    SearchTabScreen(),
-    ChatTabScreen(),
-    CartTabScreen(),
+  static final List<Widget> _screens = <Widget>[
+    const HomeTabScreen(),
+    const SearchTabScreen(),
+    const ChatTabScreen(),
+    const CartTabScreen(),
     ProfileTabScreen(),
   ];
 
@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
+        title: const Text('Barter'),
         centerTitle: true,
         backgroundColor: const Color(0xFFCA4E80),
       ),

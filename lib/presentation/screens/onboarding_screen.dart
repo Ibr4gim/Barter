@@ -1,95 +1,103 @@
 import 'package:flutter/material.dart';
 
-
-class OnboardingSlide extends StatelessWidget {
+class OnboardingSlide extends StatefulWidget {
   const OnboardingSlide({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeData(useMaterial3: true), home: const AnimatedSlideExample());
+  State<OnboardingSlide> createState() => _OnboardingScreenState();
+}
+
+class _OnboardingScreenState extends State<OnboardingSlide> {
+  final PageController _pageController = PageController();
+  int _currentPage = 0;
+
+  final List<String> _images = [
+    'assets/images/duck.png',
+    'assets/images/duck.png',
+    'assets/images/duck.png',
+  ];
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
-}
-
-class AnimatedSlideExample extends StatefulWidget {
-  const AnimatedSlideExample({super.key});
-
-  @override
-  State<AnimatedSlideExample> createState() => _AnimatedSlideExampleState();
-}
-
-class _AnimatedSlideExampleState extends State<AnimatedSlideExample> {
-  Offset offset = Offset.zero;
 
   @override
   Widget build(BuildContext context) {
-    final TextTheme textTheme = Theme.of(context).textTheme;
-
     return Scaffold(
-      // appBar: AppBar(title: const Text('AnimatedSlide Sample')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.all(50.0),
-                      child: AnimatedSlide(
-                        offset: offset,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeInOut,
-                        child: const FlutterLogo(size: 50.0),
-                      ),
-                    ),
-                  ),
-                  Column(
-                    children: <Widget>[
-                      Text('Y', style: textTheme.bodyMedium),
-                      Expanded(
-                        child: RotatedBox(
-                          quarterTurns: 1,
-                          child: Slider(
-                            min: -5.0,
-                            max: 5.0,
-                            value: offset.dy,
-                            onChanged: (double value) {
-                              setState(() {
-                                offset = Offset(offset.dx, value);
-                              });
-                            },
-                          ),
+      appBar: AppBar(
+        title: const Text('Barter'),
+        centerTitle: true,
+        backgroundColor: const Color(0xFFCA4E80),
+      ),
+      body: Stack(
+        children: [
+          PageView.builder(
+            controller: _pageController,
+            itemCount: _images.length,
+            onPageChanged: (int page) {
+              setState(() {
+                _currentPage = page;
+              });
+            },
+            itemBuilder: (context, index) {
+              return Center(
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 500),
+                  transitionBuilder: (
+                    Widget child,
+                    Animation<double> animation,
+                  ) {
+                    return SlideTransition(
+                      position: Tween<Offset>(
+                        begin: const Offset(1.0, 0.0),
+                        end: Offset.zero,
+                      ).animate(
+                        CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeInOut,
                         ),
                       ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Text('X', style: textTheme.bodyMedium),
-                Expanded(
-                  child: Slider(
-                    min: -5.0,
-                    max: 5.0,
-                    value: offset.dx,
-                    onChanged: (double value) {
-                      setState(() {
-                        offset = Offset(value, offset.dy);
-                      });
-                    },
+                      child: child,
+                    );
+                  },
+                  child: Image.asset(
+                    _images[index],
+                    key: ValueKey<int>(index),
+                    width: 200,
+                    height: 200,
+                    fit: BoxFit.contain,
                   ),
                 ),
-                const SizedBox(width: 48.0),
-              ],
+              );
+            },
+          ),
+          // Индикаторы страниц
+          Positioned(
+            bottom: 20,
+            left: 0,
+            right: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: List.generate(
+                _images.length,
+                (index) => Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                  width: _currentPage == index ? 12.0 : 8.0,
+                  height: 8.0,
+                  decoration: BoxDecoration(
+                    color:
+                        _currentPage == index
+                            ? const Color(0xFFCA4E80)
+                            : Colors.grey,
+                    borderRadius: BorderRadius.circular(4.0),
+                  ),
+                ),
+              ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

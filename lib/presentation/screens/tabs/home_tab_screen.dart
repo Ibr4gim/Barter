@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/presentation/widgets/custom_card.dart';
 
 class HomeTabScreen extends StatelessWidget {
   const HomeTabScreen({super.key});
@@ -6,61 +7,185 @@ class HomeTabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(8.0),
       children: [
-        Card(
-          elevation: 4.0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
+        Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
               children: [
-                const Text(
-                  'Product 1',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
-                const SizedBox(height: 8.0),
-                const Text('Price: \$19.99'),
-                const SizedBox(height: 8.0),
-                ElevatedButton(
-                  onPressed: () {
-                    print('Added Product 1 to cart');
-                  },
-                  child: const Text('Add to Cart'),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
               ],
             ),
-          ),
-        ),
-        Card(
-          elevation: 4.0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
               children: [
-                const Text(
-                  'Product 2',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
-                const SizedBox(height: 8.0),
-                const Text('Price: \$29.99'),
-                const SizedBox(height: 8.0),
-                ElevatedButton(
-                  onPressed: () {
-                    print('Added Product 2 to cart');
-                  },
-                  child: const Text('Add to Cart'),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
               ],
             ),
-          ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              children: [
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 1',
+                  price: 29.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+                ProductCard(
+                  imagePath: 'assets/images/duck.png',
+                  title: 'Product 2',
+                  price: 39.99,
+                  onTap: () {},
+                  backgroundColor: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
+                ),
+              ],
+            ),
+          ],
         ),
       ],
     );
