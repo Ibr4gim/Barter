@@ -6,7 +6,7 @@ class ChatTabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Chat Screen', style: TextStyle(fontSize: 24)),
+      child: Text('Chat ', style: TextStyle(fontSize: 24)),
     );
   }
 }

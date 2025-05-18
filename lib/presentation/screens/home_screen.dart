@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_project/presentation/screens/tabs/cart_tab_screen.dart';
 import 'package:my_project/presentation/screens/tabs/chat_tab_screen.dart';
 import 'package:my_project/presentation/screens/tabs/home_tab_screen.dart';
+import 'package:my_project/presentation/screens/tabs/my_treads_screen.dart';
 import 'package:my_project/presentation/screens/tabs/profile_tab_screen.dart';
-import 'package:my_project/presentation/screens/tabs/search_tab_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,10 +17,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   static final List<Widget> _screens = <Widget>[
     const HomeTabScreen(),
-    const SearchTabScreen(),
+    const MyTradesScreen(),
     const ChatTabScreen(),
     const CartTabScreen(),
-    ProfileTabScreen(),
+    const ProfileTabScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -47,7 +47,10 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: const Color(0xFFCA4E80),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.swap_horiz),
+              label: 'My Trades',
+            ),
             BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
             BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart),
