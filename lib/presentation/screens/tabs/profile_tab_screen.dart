@@ -122,7 +122,7 @@ class ProfileTabScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  CustomButtons(
+                  CustomButton(
                     text: 'Sign Out',
                     backgroundColor: Colors.redAccent,
                     textColor: Colors.white,
