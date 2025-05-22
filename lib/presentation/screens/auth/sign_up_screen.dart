@@ -11,7 +11,8 @@ class SignUp extends StatefulWidget {
 class _SignUpState extends State<SignUp> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _comfirmationController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
 
   @override
   void dispose() {
@@ -131,7 +132,7 @@ class _SignUpState extends State<SignUp> {
 
             SizedBox(height: 10),
             TextField(
-              controller: _comfirmationController,
+              controller: _confirmPasswordController,
               decoration: InputDecoration(
                 labelText: 'confirm password',
                 labelStyle: TextStyle(color: Colors.black),

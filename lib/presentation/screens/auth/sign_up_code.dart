@@ -83,7 +83,7 @@ class _SignUpCodeState extends State<SignUpCode> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 10,),
+              SizedBox(height: 10),
               Text(
                 'Sign up',
                 style: TextStyle(
@@ -150,7 +150,7 @@ class _SignUpCodeState extends State<SignUpCode> {
                       'Отправить код заново',
                       style: TextStyle(
                         fontSize: 14,
-                        color: _canResend ? Color(0xFFCA4E80): Colors.grey,
+                        color: _canResend ? Color(0xFFCA4E80) : Colors.grey,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
