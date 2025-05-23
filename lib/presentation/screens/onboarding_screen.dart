@@ -53,7 +53,10 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Barter'), centerTitle: true),
+      appBar: AppBar(
+        title: const Text('Barter', style: TextStyle(fontFamily: 'Orbitron')),
+        centerTitle: true,
+      ),
       body: Column(
         children: [
           Expanded(
