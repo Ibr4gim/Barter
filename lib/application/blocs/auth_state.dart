@@ -1,4 +1,3 @@
-// Enum для статусов
 enum SignUpStatus {
   initial,
   loading,
