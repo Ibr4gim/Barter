@@ -1,12 +1,12 @@
+import 'package:Barter/presentation/screens/auth/forgot_password_screen.dart';
+import 'package:Barter/presentation/screens/auth/login_screen.dart';
+import 'package:Barter/presentation/screens/auth/new_password.dart';
+import 'package:Barter/presentation/screens/auth/new_password_code.dart';
+import 'package:Barter/presentation/screens/auth/sign_up_code.dart';
+import 'package:Barter/presentation/screens/auth/sign_up_screen.dart';
+import 'package:Barter/presentation/screens/onboarding_screen.dart';
+import 'package:Barter/presentation/styles/theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:my_project/presentation/screens/auth/forgot_password_screen.dart';
-import 'package:my_project/presentation/screens/auth/login_screen.dart';
-import 'package:my_project/presentation/screens/auth/new_password.dart';
-import 'package:my_project/presentation/screens/auth/new_password_code.dart';
-import 'package:my_project/presentation/screens/auth/sign_up_code.dart';
-import 'package:my_project/presentation/screens/auth/sign_up_screen.dart';
-import 'package:my_project/presentation/screens/onboarding_screen.dart';
-import 'package:my_project/presentation/styles/theme/theme.dart';
 import 'presentation/screens/home_screen.dart';
 
 class BarterApp extends StatelessWidget {
@@ -29,7 +29,6 @@ class BarterApp extends StatelessWidget {
       },
       home: OnboardingSlide(),
       themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
     );
   }

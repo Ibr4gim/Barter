@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/presentation/widgets/custom_card.dart';
+import 'package:Barter/presentation/widgets/custom_card.dart';
 
 class MyTradesScreen extends StatelessWidget {
   const MyTradesScreen({super.key});

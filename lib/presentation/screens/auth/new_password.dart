@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/presentation/widgets/custom_button.dart';
+import 'package:Barter/presentation/widgets/custom_button.dart';
 
 class NewPassword extends StatefulWidget {
   const NewPassword({super.key});

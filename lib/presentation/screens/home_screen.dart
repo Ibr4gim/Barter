@@ -1,9 +1,9 @@
+import 'package:Barter/presentation/screens/tabs/cart_tab_screen.dart';
+import 'package:Barter/presentation/screens/tabs/chat_tab_screen.dart';
+import 'package:Barter/presentation/screens/tabs/home_tab_screen.dart';
+import 'package:Barter/presentation/screens/tabs/my_treads_screen.dart';
+import 'package:Barter/presentation/screens/tabs/profile_tab_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_project/presentation/screens/tabs/cart_tab_screen.dart';
-import 'package:my_project/presentation/screens/tabs/chat_tab_screen.dart';
-import 'package:my_project/presentation/screens/tabs/home_tab_screen.dart';
-import 'package:my_project/presentation/screens/tabs/my_treads_screen.dart';
-import 'package:my_project/presentation/screens/tabs/profile_tab_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

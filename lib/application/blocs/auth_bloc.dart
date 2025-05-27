@@ -1,6 +1,6 @@
+import 'package:Barter/application/blocs/auth_event.dart';
+import 'package:Barter/application/blocs/auth_state.dart';
 import 'package:bloc/bloc.dart';
-import 'package:my_project/application/blocs/auth_event.dart';
-import 'package:my_project/application/blocs/auth_state.dart';
 
 class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
   SignUpBloc() : super(const SignUpState()) {

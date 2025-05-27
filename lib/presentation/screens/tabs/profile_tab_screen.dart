@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/presentation/screens/tabs/edit_profile_screen.dart';
-import 'package:my_project/presentation/screens/tabs/enter_address_screen.dart';
-import 'package:my_project/presentation/widgets/custom_button.dart';
+import 'package:Barter/presentation/screens/tabs/edit_profile_screen.dart';
+import 'package:Barter/presentation/screens/tabs/enter_address_screen.dart';
+import 'package:Barter/presentation/widgets/custom_button.dart';
 
 class ProfileTabScreen extends StatelessWidget {
   const ProfileTabScreen({super.key});
