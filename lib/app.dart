@@ -5,6 +5,7 @@ import 'package:Barter/presentation/screens/auth/new_password_code.dart';
 import 'package:Barter/presentation/screens/auth/sign_up_code.dart';
 import 'package:Barter/presentation/screens/auth/sign_up_screen.dart';
 import 'package:Barter/presentation/screens/onboarding_screen.dart';
+import 'package:Barter/presentation/screens/tabs/search_screen.dart';
 import 'package:Barter/presentation/styles/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'presentation/screens/home_screen.dart';
@@ -15,7 +16,7 @@ class BarterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Barter - Алмашуу',
+      title: '1Jol',
       debugShowCheckedModeBanner: false,
       initialRoute: '/splash',
       routes: {
@@ -25,7 +26,8 @@ class BarterApp extends StatelessWidget {
         '/forgot_password': (context) => ForgotPassword(),
         '/sign_up_code': (context) => SignUpCode(),
         '/new_password_code': (context) => NewPasswordCode(),
-        'new_password': (context) => NewPassword(),
+        '/new_password': (context) => NewPassword(),
+        '/search_screen': (context) => SearchScreen(),
       },
       home: OnboardingSlide(),
       themeMode: ThemeMode.system,

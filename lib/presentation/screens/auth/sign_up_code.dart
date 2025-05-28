@@ -69,25 +69,27 @@ class _SignUpCodeState extends State<SignUpCode> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.black, size: 28),
-          onPressed: () => Navigator.pop(context),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //     icon: const Icon(Icons.close, color: Colors.black, size: 28),
+      //     onPressed: () => Navigator.pop(context),
+      //   ),
+      //   backgroundColor:Color(0xFF0A0A0A),
+      //   elevation: 0,
+      // ),
+      backgroundColor: Color(0xFF0A0A0A),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 10),
+              SizedBox(height: 130),
               Text(
                 'Sign up',
                 style: TextStyle(
-                  color: Color(0xFFCA4E80),
+                  color: Color(0xFF00D4AA),
                   fontSize: 32,
                   fontWeight: FontWeight.w700,
                   height: 1.5,
@@ -171,7 +173,7 @@ class _SignUpCodeState extends State<SignUpCode> {
                 text: 'Sign up',
                 textColor: Colors.white,
                 onPressed: _isPinValid ? _verifyCode : null,
-                backgroundColor: Color(0xFFCA4E80),
+                backgroundColor: Color(0xFF00D4AA),
               ),
             ],
           ),

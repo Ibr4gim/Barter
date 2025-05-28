@@ -53,12 +53,21 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Barter', style: TextStyle(fontFamily: 'Orbitron')),
-        centerTitle: true,
-      ),
+      backgroundColor: Color(0xFF0A0A0A),
       body: Column(
         children: [
+          // Stack(
+          //   children: [
+          //     Text(
+          //       'Barter',
+          //       style: TextStyle(
+          //         color: Color(0xFF00D4AA),
+          //         fontSize: 32,
+          //         fontWeight: FontWeight.w700,
+          //       ),
+          //     ),
+          //   ],
+          // ),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -91,7 +100,7 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
                 decoration: BoxDecoration(
                   color:
                       _currentPage == index
-                          ? const Color(0xFFCA4E80)
+                          ? const Color(0xFF00D4AA)
                           : Colors.grey,
                   borderRadius: BorderRadius.circular(4.0),
                 ),
@@ -102,7 +111,7 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
           ElevatedButton(
             onPressed: _goToNextPage,
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFCA4E80),
+              backgroundColor: const Color(0xFF00D4AA),
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
             ),
             child: Text(
@@ -114,7 +123,7 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
             onPressed: _skipOnboarding,
             child: const Text(
               'Пропустить',
-              style: TextStyle(color: Color(0xFFCA4E80)),
+              style: TextStyle(color: Color(0xFF00D4AA)),
             ),
           ),
           const SizedBox(height: 20),

@@ -24,15 +24,15 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.black, size: 28),
-          onPressed: () => Navigator.pop(context),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      backgroundColor:Color(0xFF0A0A0A),
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //     icon: const Icon(Icons.close, color: Colors.black, size: 28),
+      //     onPressed: () => Navigator.pop(context),
+      //   ),
+      //   backgroundColor: Colors.white,
+      //   elevation: 0,
+      // ),
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 20, right: 20),
         child: Column(
@@ -43,7 +43,7 @@ class _SignUpState extends State<SignUp> {
             Text(
               'Sign up',
               style: TextStyle(
-                color: Color(0xFFCA4E80),
+                color: Color(0xFF00D4AA),
                 fontSize: 32,
                 fontWeight: FontWeight.w700,
                 height: 1.5,
@@ -58,7 +58,7 @@ class _SignUpState extends State<SignUp> {
                   'Enter email',
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -70,9 +70,9 @@ class _SignUpState extends State<SignUp> {
               controller: _emailController,
               decoration: InputDecoration(
                 labelText: 'email',
-                labelStyle: TextStyle(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
@@ -90,7 +90,7 @@ class _SignUpState extends State<SignUp> {
                   'Enter password',
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -102,15 +102,15 @@ class _SignUpState extends State<SignUp> {
               controller: _passwordController,
               decoration: InputDecoration(
                 labelText: 'password',
-                labelStyle: TextStyle(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
                 ),
               ),
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
               obscureText: true,
             ),
 
@@ -123,7 +123,7 @@ class _SignUpState extends State<SignUp> {
                   'confirm password',
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -135,15 +135,15 @@ class _SignUpState extends State<SignUp> {
               controller: _confirmPasswordController,
               decoration: InputDecoration(
                 labelText: 'confirm password',
-                labelStyle: TextStyle(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
                 ),
               ),
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
             ),
 
             SizedBox(height: 20, width: 70),
@@ -153,7 +153,7 @@ class _SignUpState extends State<SignUp> {
               onPressed: () {
                 Navigator.pushNamed(context, '/sign_up_code');
               },
-              backgroundColor: Color(0xFFCA4E80),
+              backgroundColor: Color(0xFF00D4AA),
             ),
           ],
         ),

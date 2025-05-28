@@ -7,7 +7,7 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF0A0A0A),
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 20, right: 20),
         // decoration: BoxDecoration(
@@ -37,9 +37,9 @@ class AuthScreen extends StatelessWidget {
             Text(
               'Barter',
               style: TextStyle(
-                color: Color(0xFFCA4E80),
-                fontSize: 40,
-                fontWeight: FontWeight.w700,
+                color: Color(0xFF00D4AA),
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
                 fontFamily: 'NeueMachine',
                 height: 1.5,
               ),
@@ -48,7 +48,7 @@ class AuthScreen extends StatelessWidget {
             Text(
               'Barter is a platform for exchanging items you no longer need. List your stuff, like an old mouse, and discover what others offer in return. Simple, sustainable, and community-driven. ',
               textAlign: TextAlign.start,
-              style: TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
+              style: TextStyle(fontSize: 18, color: Colors.white, height: 1.5),
             ),
             SizedBox(height: 20, width: 70),
             CustomButton(
@@ -57,7 +57,7 @@ class AuthScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/login');
               },
-              backgroundColor: Color(0xFFCA4E80),
+              backgroundColor: Color(0xFF00D4AA),
             ),
             SizedBox(height: 20),
             CustomButton(
@@ -66,7 +66,7 @@ class AuthScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/sign_up');
               },
-              backgroundColor: Color(0xFFCA4E80),
+              backgroundColor: Color(0xFF00D4AA),
             ),
           ],
         ),

@@ -22,15 +22,15 @@ class _SignInScreenState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.black, size: 28),
-          onPressed: () => Navigator.pop(context),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
-      backgroundColor: Colors.white,
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //     icon: const Icon(Icons.close, color: Colors.black, size: 28),
+      //     onPressed: () => Navigator.pop(context),
+      //   ),
+      //   backgroundColor: Colors.white,
+      //   elevation: 0,
+      // ),
+      backgroundColor: Color(0xFF0A0A0A),
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 20, right: 20),
         child: Column(
@@ -41,7 +41,7 @@ class _SignInScreenState extends State<Login> {
             Text(
               'Login',
               style: TextStyle(
-                color: Color(0xFFCA4E80),
+                color: Color(0xFF00D4AA),
                 fontSize: 32,
                 fontWeight: FontWeight.w700,
                 height: 1.5,
@@ -56,7 +56,7 @@ class _SignInScreenState extends State<Login> {
                   'Enter email',
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -68,15 +68,15 @@ class _SignInScreenState extends State<Login> {
               controller: _emailController,
               decoration: InputDecoration(
                 labelText: 'email',
-                labelStyle: TextStyle(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
                 ),
               ),
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
             ),
 
             SizedBox(height: 30),
@@ -88,7 +88,7 @@ class _SignInScreenState extends State<Login> {
                   'Enter password',
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -100,15 +100,15 @@ class _SignInScreenState extends State<Login> {
               controller: _passwordController,
               decoration: InputDecoration(
                 labelText: 'password',
-                labelStyle: TextStyle(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
                 ),
               ),
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
               obscureText: true,
             ),
             SizedBox(height: 20),
@@ -122,7 +122,7 @@ class _SignInScreenState extends State<Login> {
                   'forgot password',
                   style: TextStyle(
                     fontSize: 18,
-                    color: Color(0xFFCA4E80),
+                    color: Color(0xFF00D4AA),
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -132,10 +132,8 @@ class _SignInScreenState extends State<Login> {
             CustomButton(
               text: 'Login',
               textColor: Colors.white,
-              backgroundColor: Color(0xFFCA4E80),
-              onPressed: () {
-                
-              },
+              backgroundColor: Color(0xFF00D4AA),
+              onPressed: () {},
             ),
           ],
         ),

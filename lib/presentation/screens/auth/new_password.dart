@@ -23,42 +23,47 @@ class _NewPasswordState extends State<NewPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.close, color: Colors.black, size: 28),
-          onPressed: () => Navigator.pop(context),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      backgroundColor: Color(0xFF0A0A0A),
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //     icon: Icon(Icons.close, color: Colors.black, size: 28),
+      //     onPressed: () => Navigator.pop(context),
+      //   ),
+      //   backgroundColor: Colors.white,
+      //   elevation: 0,
+      // ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 20),
-              const Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 5.0),
-                  child: Text(
-                    'Введите новый пароль',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
+              const SizedBox(height: 130),
+              Text(
+                'New password',
+                style: TextStyle(
+                  color: Color(0xFF00D4AA),
+                  fontSize: 32,
+                  fontWeight: FontWeight.w700,
+                  height: 1.5,
                 ),
               ),
-              const SizedBox(height: 10),
+
+              Text(
+                'Введите новый пароль',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 20),
               TextField(
                 controller: _passwordController,
                 decoration: const InputDecoration(
                   labelText: 'Пароль',
-                  labelStyle: TextStyle(color: Colors.black),
+                  labelStyle: TextStyle(color: Colors.white),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -66,7 +71,7 @@ class _NewPasswordState extends State<NewPassword> {
                     borderSide: BorderSide(color: Colors.blue),
                   ),
                 ),
-                style: const TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.white),
                 obscureText: true,
               ),
               const SizedBox(height: 20),
@@ -78,7 +83,7 @@ class _NewPasswordState extends State<NewPassword> {
                     'Повторите новый пароль',
                     style: TextStyle(
                       fontSize: 14,
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -89,7 +94,7 @@ class _NewPasswordState extends State<NewPassword> {
                 controller: _confirmPasswordController,
                 decoration: const InputDecoration(
                   labelText: 'Повторите пароль',
-                  labelStyle: TextStyle(color: Colors.black),
+                  labelStyle: TextStyle(color: Colors.white),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -97,14 +102,14 @@ class _NewPasswordState extends State<NewPassword> {
                     borderSide: BorderSide(color: Colors.blue),
                   ),
                 ),
-                style: const TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.white),
                 obscureText: true,
               ),
               const Spacer(),
               CustomButton(
                 text: 'Сохранить',
                 textColor: Colors.white,
-                backgroundColor: Colors.blue,
+                backgroundColor: Color(0xFF00D4AA),
                 onPressed: () {
                   if (_passwordController.text.isEmpty ||
                       _confirmPasswordController.text.isEmpty) {
