@@ -14,6 +14,7 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF0A0A0A),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -109,7 +110,9 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
                   title: 'Предложить поездку',
                   subtitle: 'Найти попутчиков',
                   color: Colors.blue,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/search_screen');
+                  },
                 ),
                 const SizedBox(height: 16),
                 _buildActionCard(

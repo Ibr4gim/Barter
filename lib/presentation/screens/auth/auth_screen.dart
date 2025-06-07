@@ -10,18 +10,6 @@ class AuthScreen extends StatelessWidget {
       backgroundColor: Color(0xFF0A0A0A),
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 20, right: 20),
-        // decoration: BoxDecoration(
-        //   gradient: LinearGradient(
-        //     begin: Alignment.bottomRight,
-        //     end: Alignment.topLeft,
-        //     colors: [
-        //       Color.fromARGB(255, 5, 1, 9),
-        //       Color.fromARGB(255, 42, 10, 60),
-        //       Color.fromARGB(255, 75, 12, 96),
-        //     ],
-        //     stops: [0.0, 0.15, 0.37],
-        //   ),
-        // ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -35,12 +23,11 @@ class AuthScreen extends StatelessWidget {
               ),
             ),
             Text(
-              'Barter',
+              '1Jol',
               style: TextStyle(
                 color: Color(0xFF00D4AA),
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'NeueMachine',
                 height: 1.5,
               ),
             ),

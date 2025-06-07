@@ -22,14 +22,6 @@ class _SignInScreenState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   leading: IconButton(
-      //     icon: const Icon(Icons.close, color: Colors.black, size: 28),
-      //     onPressed: () => Navigator.pop(context),
-      //   ),
-      //   backgroundColor: Colors.white,
-      //   elevation: 0,
-      // ),
       backgroundColor: Color(0xFF0A0A0A),
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 20, right: 20),
@@ -37,7 +29,14 @@ class _SignInScreenState extends State<Login> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 130),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: IconButton(
+                icon: const Icon(Icons.close_sharp, color: Colors.white, size: 28),
+                onPressed: () => Navigator.pop(context),
+              ),
+            ),
+            SizedBox(height: 100),
             Text(
               'Login',
               style: TextStyle(

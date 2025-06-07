@@ -9,22 +9,14 @@ class ProfileTabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF0A0A0A),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
             expandedHeight: 280,
             flexibleSpace: FlexibleSpaceBar(
               background: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Theme.of(context).primaryColor,
-                      Theme.of(context).primaryColorLight,
-                    ],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                  ),
-                ),
+                color: Color(0xFF00D4AA),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -72,7 +64,10 @@ class ProfileTabScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         ListTile(
-                          leading: const Icon(Icons.edit, color: Colors.blue),
+                          leading: const Icon(
+                            Icons.edit,
+                            color: Color(0xFF00D4AA),
+                          ),
                           title: const Text(
                             'Edit Profile',
                             style: TextStyle(
@@ -96,7 +91,7 @@ class ProfileTabScreen extends StatelessWidget {
                         ListTile(
                           leading: const Icon(
                             Icons.location_on,
-                            color: Colors.blue,
+                            color: Color(0xFF00D4AA),
                           ),
                           title: const Text(
                             'Address',

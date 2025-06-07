@@ -59,7 +59,7 @@ class _OnboardingSlideState extends State<OnboardingSlide> {
           // Stack(
           //   children: [
           //     Text(
-          //       'Barter',
+          //       '1Jol',
           //       style: TextStyle(
           //         color: Color(0xFF00D4AA),
           //         fontSize: 32,

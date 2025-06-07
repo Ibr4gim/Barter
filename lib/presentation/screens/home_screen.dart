@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
               colors: [Color(0xFF00D4AA), Color(0xFF00A693)],
             ).createShader(bounds),
         child: const Text(
-          'Barter',
+          '1Jol',
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,

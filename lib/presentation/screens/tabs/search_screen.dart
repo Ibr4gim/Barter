@@ -21,7 +21,6 @@ class _SearchScreenState extends State<SearchScreen>
   bool _isSearching = false;
   String _selectedRideType = 'comfort';
 
-  // Мокданные для попутчиков
   final List<Map<String, dynamic>> _nearbyRides = [
     {
       'driverName': 'Nurel B.',
@@ -102,7 +101,7 @@ class _SearchScreenState extends State<SearchScreen>
           subdomains: const ['a', 'b', 'c', 'd'],
         ),
 
-        // MarkerLayer можно добавить здесь при необходимости
+        // MarkerLayer 
       ],
     );
   }
@@ -112,7 +111,6 @@ class _SearchScreenState extends State<SearchScreen>
       _isSearching = true;
     });
 
-    // Имитация поиска
     Future.delayed(const Duration(seconds: 2), () {
       setState(() {
         _isSearching = false;
