@@ -43,6 +43,7 @@ class _SignInScreenState extends State<ForgotPassword> {
               'New password',
               style: TextStyle(
                 color: Color(0xFF00D4AA),
+                fontFamily: 'Montserrat',
                 fontSize: 32,
                 fontWeight: FontWeight.w700,
                 height: 1.5,
