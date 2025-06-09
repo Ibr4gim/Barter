@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ride_type_selector.dart';
 
 class SearchControls extends StatelessWidget {
   final TextEditingController fromController;
@@ -53,11 +52,6 @@ class SearchControls extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          const SizedBox(height: 16),
-          RideTypeSelector(
-            selectedRideType: selectedRideType,
-            onRideTypeChanged: onRideTypeChanged,
           ),
         ],
       ),

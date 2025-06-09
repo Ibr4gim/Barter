@@ -40,6 +40,15 @@ class _SearchScreenState extends State<SearchScreen>
       'seats': 2,
       'distance': '0.7 км',
     },
+    {
+     'driverName': 'bla. b',
+      'rating': 4.9,
+      'carModel': 'Honda Civic',
+      'price': 220,
+      'arrivalTime': '5 мин',
+      'seats': 2,
+      'distance': '0.7 км',
+    },
   ];
 
   @override

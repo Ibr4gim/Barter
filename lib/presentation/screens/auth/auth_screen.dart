@@ -17,7 +17,7 @@ class AuthScreen extends StatelessWidget {
             Align(
               alignment: Alignment.topLeft,
               child: Image.asset(
-                'assets/images/birJolLogo.png',
+                'assets/images/duck.png',
                 width: 46,
                 height: 46,
               ),
