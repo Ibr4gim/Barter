@@ -1,5 +1,5 @@
+import 'package:BirJol/presentation/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:Barter/presentation/widgets/custom_button.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class SignUpCode extends StatefulWidget {

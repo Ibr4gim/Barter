@@ -1,5 +1,7 @@
-import 'package:Barter/application/blocs/auth_event.dart';
-import 'package:Barter/application/blocs/auth_state.dart';
+// import 'package:Barter/application/blocs/auth_event.dart';
+// import 'package:Barter/application/blocs/auth_state.dart';
+import 'package:BirJol/application/blocs/auth_event.dart';
+import 'package:BirJol/application/blocs/auth_state.dart';
 import 'package:bloc/bloc.dart';
 
 class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {

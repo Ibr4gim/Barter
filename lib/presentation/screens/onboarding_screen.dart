@@ -1,4 +1,5 @@
-import 'package:Barter/presentation/screens/auth/auth_screen.dart';
+// import 'package:Barter/presentation/screens/auth/auth_screen.dart';
+import 'package:BirJol/presentation/screens/auth/auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

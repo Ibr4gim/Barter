@@ -1,7 +1,10 @@
+import 'package:BirJol/presentation/screens/tabs/edit_profile_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/enter_address_screen.dart';
+import 'package:BirJol/presentation/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:Barter/presentation/screens/tabs/edit_profile_screen.dart';
-import 'package:Barter/presentation/screens/tabs/enter_address_screen.dart';
-import 'package:Barter/presentation/widgets/custom_button.dart';
+// import 'package:Barter/presentation/screens/tabs/edit_profile_screen.dart';
+// import 'package:Barter/presentation/screens/tabs/enter_address_screen.dart';
+// import 'package:Barter/presentation/widgets/custom_button.dart';
 
 class ProfileTabScreen extends StatelessWidget {
   const ProfileTabScreen({super.key});

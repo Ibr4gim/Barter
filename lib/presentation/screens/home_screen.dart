@@ -1,8 +1,8 @@
-import 'package:Barter/presentation/screens/tabs/cart_tab_screen.dart';
-import 'package:Barter/presentation/screens/tabs/chat_tab_screen.dart';
-import 'package:Barter/presentation/screens/tabs/home_tab_screen.dart';
-import 'package:Barter/presentation/screens/tabs/search_screen.dart';
-import 'package:Barter/presentation/screens/tabs/profile_tab_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/cart_tab_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/chat_tab_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/home_tab_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/search_screen.dart';
+import 'package:BirJol/presentation/screens/tabs/profile_tab_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
               colors: [Color(0xFF00D4AA), Color(0xFF00A693)],
             ).createShader(bounds),
         child: const Text(
-          '1Jol',
+          'BirJol',
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,

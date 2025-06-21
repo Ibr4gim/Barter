@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ride_card.dart';
+// import 'ride_card.dart';
 
 class SearchBottomSheet extends StatelessWidget {
   final bool isSearching;
@@ -74,19 +74,20 @@ class SearchBottomSheet extends StatelessWidget {
           ),
           elevation: 0,
         ),
-        child: isSearching
-            ? const SizedBox(
-                width: 24,
-                height: 24,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+        child:
+            isSearching
+                ? const SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+                  ),
+                )
+                : const Text(
+                  'Найти попутчика',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-              )
-            : const Text(
-                'Найти попутчика',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
       ),
     );
   }
@@ -112,11 +113,11 @@ class SearchBottomSheet extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           itemCount: nearbyRides.length,
           itemBuilder: (context, index) {
-            final ride = nearbyRides[index];
-            return RideCard(
-              ride: ride,
-              onBookRide: () => onBookRide(ride),
-            );
+            // final ride = nearbyRides[index];
+            // return RideCard(
+            //   ride: ride,
+            //   onBookRide: () => onBookRide(ride),
+            // );
           },
         ),
         const SizedBox(height: 100), // Отступ для навигации
